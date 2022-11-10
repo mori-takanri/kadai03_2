@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>moris EC</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer="" src="main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html">
+       <h1>サツドラSHOPPING</h1> 
+        <h1>
+          <img 
+            src="images/satsudora.png" 
+            alt="さつどら"
+            width="250"
+            height="150">
+        </h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#">
+            <i class="bi bi-person-circle"></i>
+            ログイン</a></li>
+          <li><a href="#">
+            <i class="bi bi-cart4"></i>
+             カート</a><span id="total"></span></li>
+             
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!-- <section class="hero">
+<img src="images/satudoraHD_logo.png" alt="">
+
+</section> -->
+
+<section class="products">
+  <div class="container">
+    <h1>商品一覧</h1>
+    <ul>
+      <li data-num="1">
+  
+          <img src="images/超炭酸水.png" alt="超炭酸水">
+          <h2>超炭酸水500ml</h2>
+          <p>55円</p>
+          <button id="button1" class="btn-orange">カートに入れる</button>
+         
+        
+      </li> 
+     
+      <li>
+        <a href="#">
+          <img src="images/サツどら焼き.png" alt="サツドラ焼">
+          <h2>サツドラ焼</h2>
+          <p>98円</p>
+        </a>
+        <button id="button2" class="btn-orange">カートに入れる</button>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/トイレットペーパー.png" alt="トイレットペーパー">
+          <h2>トイレットペーパー</h2>
+          <p>298円</p>
+        </a>
+        <button id="button3" class="btn-orange">カートに入れる</button>
+        <!-- <a href=""class="btn-orange">カートに入れる</a> -->
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/ウエットタオル.png" alt="ウェットティッシュ">
+          <h2>ウエットティッシュ</h2>
+          <p>98円</p>
+        </a>
+        <button id="button4" class="btn-orange">カートに入れる</button> 
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/れもん.png" alt="超炭酸水">
+          <h2>超炭酸水レモン</h2>
+          <p>65円</p>
+        </a>
+        <button id="button5" class="btn-orange">カートに入れる</button>
+       
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/もふもふハンディワイパー.png" alt="ハンディワイパー">
+          <h2>ハンディワイパー</h2>
+          <p>198円</p>
+        </a>
+        <button id="button6" class="btn-orange">カートに入れる</button> 
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/キッチンタオル.png" alt="キッチンタオル">
+          <h2>キッチンタオル</h2>
+          <p>198円</p>
+        </a>
+        <button id="button7" class="btn-orange">カートに入れる</button> 
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/スライダーバック.png" alt="スライダーバック">
+          <h2>スライダーバッグ</h2>
+          <p>98円</p>
+        </a>
+        <button id="button8" class="btn-orange">カートに入れる</button>  
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/サツドラの水.png" alt="サツドラの水">
+          <h2>サツドラの水</h2>
+          <p>98円</p>
+        </a>
+        <button id="button9" class="btn-orange">カートに入れる</button>    
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/kakusyu.png" alt="">各種
+          <h2>スライダーバッグ各種</h2>
+          <p>98円</p>
+        </a>
+        <button id="button10" class="btn-orange">カートに入れる</button>     
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/ティッシュ.png" alt="ティッシュ">
+          <h2>ティッシュ</h2>
+          <p>198円</p>
+        </a>
+        <button id="button11" class="btn-orange">カートに入れる</button>      
+        
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/コーラ.png" alt="超炭酸水のコーラ">
+          <h2>超炭酸水のコーラ</h2>
+          <p>98円</p>
+        </a>
+        <button id="button12" class="btn-orange">カートに入れる</button>      
+          
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/サイダー.png" alt="サイダー">
+          <h2>超炭酸水のサイダー</h2>
+          <p>98円</p>
+        </a>
+        <button id="button13" class="btn-orange">カートに入れる</button>      
+          
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/ウエットシート.png" alt="ウエットシート">
+          <h2>ウエットシート</h2>
+          <p>98円</p>
+        </a>
+        <button id="button14" class="btn-orange">カートに入れる</button>      
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/化粧水.png" alt="化粧水">
+          <h2>化粧水</h2>
+          <p>298円</p>
+        </a>
+        <button id="button15" class="btn-orange">カートに入れる</button>       
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/エコバック.png" alt="エコバック">
+          <h2>エコバック</h2>
+          <p>198円</p>
+        </a>
+        <button id="button16" class="btn-orange">カートに入れる</button>      
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/吉牛.png" alt="吉野屋の牛丼">
+          <h2>吉野屋の牛丼</h2>
+          <p>398円</p>
+        </a>
+        <button id="button17" class="btn-orange">カートに入れる</button>      
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/メリドン.png" alt="メリドン">
+          <h2>メリドン</h2>
+          <p>198円</p>
+        </a>
+        <button id="button18" class="btn-orange">カートに入れる</button>      
+      </li>
+      
+        <li>
+          <a href="#">
+            <img src="images/ゴミ袋.png" alt="ゴミ袋">
+            <h2>ゴミ袋各種</h2>
+            <p>98円</p>
+          </a>
+          <button id="button19" class="btn-orange">カートに入れる</button>      
+        </li>
+        
+          <li>
+            <a href="#">
+              <img src="images/チートス.png" alt="チートス">
+              <h2>チートス</h2>
+              <p>69円</p>
+            </a>
+            <button id="button20" class="btn-orange">カートに入れる</button>      
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/絆創膏.png" alt="絆創膏">
+              <h2>絆創膏</h2>
+              <p>198円</p>
+            </a>
+            <button id="button21" class="btn-orange">カートに入れる</button>     
+          </li>
+          
+         
+         
+         
+    
+
+
+   <a href="#" class="more">もっと見る</a>
+  </div>
+
+  <main>
+    <br>お買い物メモにお使い下さい<br />
+      <input name="mydata_in" id="mydata_in" type="text" value="" />
+      <br />
+      <input type="button" value="読込" onclick="load();"/>
+      <input type="button" value="保存" onclick="save();"/>
+      <br /><br />
+      <div id="mydata_out"></div>
+       <main> 
+      <form>
+        <div> 
+      </main>
+    
+      <div class="mori">
+          
+          <img  src="images/森.png" alt="森"> 
+          <h3>森貴規（サツドラ社員）</h3>
+          <br>サツドラ社員ですが、自由に仕事をしています
+            <br>基本暇ですので、お仕事を下さい！！
+            森へ仕事を頼みたい方は、</br>
+            下記お問い合わせ欄に記載し送信して下さい。
+
+          </h4>
+          
+
+        </a>
+      </li>
+    </ul>
+  </div>
+  <h4>森へのお問い合わせはこちらになります</h4>
+
+  
+  
+      <!-- <label>
+        お名前
+        <input name="mydate_in" id="mydate_intype="text" placeholder="例:田川カツオ">
+      </label>
+    </div>
+    <div>
+      <label>
+        内容
+        <textarea placeholder="例:森が2円とは意味がわかりません"></textarea>
+      </label>
+    </div>
+    <div> --> 
+      <!-- <button>送信</button> -->
+      <!-- <input type="submit" value="送信"> -->
+    <!-- </div> -->
+  <!-- </form> -->
+<!-- </main> --> 
+
+<textarea  id="memo" cols="50" rows="10"name="memo"placeholder="例:お前はどんな仕事ができるんだい？"></textarea>
+<p><input type="button"id="save"value="送信">
+ <input type="button"id="clear"value="削除">
+</p>
+
+
+
+</section> 
+<footer>
+  <div class="container">
+    <small>morisanwokattekudasai.com</small>
+    <ul>
+      <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+      <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+    </ul>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script src=”jquery.js”></script>
+<script src=”garlic.js”></script>
+</body>
+</html>
